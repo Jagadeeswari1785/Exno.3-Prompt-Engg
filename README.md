@@ -1,48 +1,78 @@
 # Exno.3-Scenario-Based Report Development Utilizing Diverse Prompting Techniques
-### DATE:                                                                            
-### REGISTER NUMBER : 
+### DATE:30-08-2025                                                                            
+### REGISTER NUMBER : 212223060093
 ### Aim: To design an AI-powered chatbot that assists customers in resolving issues related to product troubleshooting, order tracking, and general inquiries. The chatbot should handle various customer queries efficiently while maintaining a conversational and user-friendly tone. In this experiment, we will employ different prompt patterns to guide the development process of the chatbot, ranging from basic task-oriented prompts to more complex, persona-driven prompts.
 
-### Algorithm:  1. Direct Instruction Prompts
-Objective: Guide the chatbot to respond concisely to customer inquiries.
-Prompt Pattern:
-Prompt: "When a customer asks for the status of their order, reply with: 'Your order is currently being processed and will be delivered by [date].'"
+Prompt and Output
+1. Direct Instruction Prompt
+
+Use Case: Definition Request
+
+Scenario: Student asks, “What is Ohm’s Law?”
+
+Response: “Ohm’s Law states that the current through a conductor is directly proportional to the voltage across it, provided the temperature remains constant.”
+
 2. Contextual Prompting
-Objective: Incorporate specific context to provide detailed answers based on the user’s previous interaction.
-Prompt Pattern:
-Prompt: "If the customer previously mentioned that they haven’t received their order, say, 'I see that you mentioned your order hasn't arrived yet. Let me check the details for you and get back shortly.'"
+
+Use Case: Simplifying Explanation
+
+Scenario: Student says, “I still don’t get Ohm’s Law.”
+
+Response: “No worries! Think of it like water in a pipe: Voltage is like water pressure, current is the flow, and resistance is how narrow the pipe is. More pressure means more flow, unless the pipe is too narrow.”
+
 3. Persona-Based Prompting
-Objective: Design the chatbot to adopt a specific persona, making the interaction more engaging.
-Prompt Pattern:
-Prompt: "Pretend you are a friendly, helpful customer service representative. Use a conversational tone, such as 'Hey there! I’m here to help with any questions you might have. Let’s get your issue sorted!'"
+
+Use Case: Friendly & Motivating
+
+Scenario: Student says, “I feel physics is too hard.”
+
+Response: “Hey, I get it! Physics can feel tricky at first, but you’re already doing great by asking questions. Let’s break it down step by step—I’ll be with you until you get it!”
+
 4. Few-Shot Prompting
-Objective: Teach the AI how to respond using a few examples, enabling it to generalize for similar situations.
-Prompt Pattern:
-Prompt: "Here are some examples of how to handle technical questions:
-'My phone isn't charging.' → 'Have you tried using a different cable? If that doesn’t work, it may be an issue with the port.'
-'The screen is flickering.' → 'It sounds like a display issue. Have you tried restarting the device?'
-Now, respond to: 'My app keeps crashing.'"
+
+Use Case: Math Problem Solving
+
+Scenario: Student says, “Solve 2x + 5 = 15.”
+
+Response:
+“Example: x + 3 = 7 → x = 4.
+Now for your problem:
+2x + 5 = 15 → 2x = 10 → x = 5.”
+
 5. Chain of Thought Prompting
-Objective: Use a step-by-step reasoning approach for resolving more complex or technical issues.
-Prompt Pattern:
-Prompt: "When a customer reports their laptop overheating, guide them through the following steps:
-Ask if they are using the laptop on a soft surface.
-Suggest moving the laptop to a flat, hard surface for better airflow.
-Ask if they’ve cleaned the vents recently.
-Recommend restarting the device to see if the issue persists.
-Now, solve: 'My laptop fan is making a loud noise.'"
+
+Use Case: Physics Problem
+
+Scenario: Student asks, “A car accelerates from rest at 2 m/s² for 5 seconds. Find the final velocity.”
+
+Response:
+“Step 1: Formula: v = u + at.
+Step 2: u = 0, a = 2, t = 5.
+Step 3: v = 0 + (2 × 5) = 10 m/s.
+Final Answer: The car’s final velocity is 10 m/s.”
+
 6. Instruction with Constraints
-Objective: Instruct the chatbot to provide assistance while adhering to specific constraints (e.g., response length or tone).
-Prompt Pattern:
-Prompt: "Respond to order inquiries in no more than 50 words and avoid using technical jargon. For example, 'Your order is on the way and should arrive by [date]. Feel free to reach out if you need anything else.'"
+
+Use Case: Quick Revision
+
+Scenario: Student says, “Summarize photosynthesis.”
+
+Response (≤40 words):
+“Photosynthesis is the process by which green plants use sunlight, carbon dioxide, and water to produce glucose (food) and oxygen.”
+
 7. Reflective Prompting
-Objective: Ensure that the chatbot reflects the user’s query back to them before providing a response, reducing misunderstandings.
-Prompt Pattern:
-Prompt: "When a customer asks for help, first reflect their question back to them. For example, if they ask 'How can I reset my password?' respond with 'You're asking how to reset your password, correct? Here’s how you can do it.'"
-Result: The various types of Prompts are executed successfully.
 
+Use Case: Query Confirmation
 
+Scenario: Student says, “How do I calculate resistance?”
 
+Response:
+“You’re asking how to calculate resistance, correct? The formula is R = V / I, where R is resistance, V is voltage, and I is current.”
 
-# Result: Thus the Prompts were exected succcessfully .
+Conclusion
 
+Different prompting strategies were applied to design a virtual learning assistant capable of handling student queries in definitions, problem-solving, motivation, and quick revisions. Each pattern ensured better adaptability and user-friendly interactions.
+
+Result
+
+Thus, the various types of prompts were executed successfully.
